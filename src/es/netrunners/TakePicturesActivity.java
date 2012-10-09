@@ -50,7 +50,7 @@ public class TakePicturesActivity extends Activity {
 				MODE_PRIVATE);
 		Editor editor = settings.edit();
 		editor.putString("FILE", file.getAbsolutePath());
-		editor.commit(); // IMPORTANT
+		editor.commit(); // IMPORTANTE
 		startActivityForResult(intent, TAKE_PICTURE);
 	}
 
